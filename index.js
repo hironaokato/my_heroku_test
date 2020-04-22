@@ -1,9 +1,9 @@
-const express = require('express')
-const pg = require('pg')
+const express = require('express');
+const pg = require('pg');
 const app = express()
 const PORT = process.env.PORT || 5000
 
-var pool = pg.Pool({
+const pool = new  pg.Pool({
     database:'d1irhf9en4p84a', 
     user:'hsqdzagistxflr',
     password:'cede442b8aa70db317b286360151b3ad3c0b5d86e41f2e643c24825f4521f46a',
